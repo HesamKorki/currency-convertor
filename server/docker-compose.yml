@@ -1,0 +1,20 @@
+version: "3.5"
+  
+services:
+
+  convertor-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    container_name: convertor-api
+
+    environment:
+      - HOST=0.0.0.0
+      - PORT=7575
+      - BASE_URL=https://api.exchangerate.host/latest
+    
+    ports:
+      - "7575:7575"
+
+
