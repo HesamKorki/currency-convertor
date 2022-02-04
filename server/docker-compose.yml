@@ -10,8 +10,8 @@ services:
     container_name: convertor-api
 
     environment:
-      - HOST=0.0.0.0
-      - PORT=7575
+      - CONVERTOR_HOST=0.0.0.0
+      - CONVERTOR_PORT=7575
       - BASE_URL=https://api.exchangerate.host/latest
     
     ports:
