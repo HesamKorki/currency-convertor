@@ -26,4 +26,4 @@ RUN pip install -r requirements.txt
 # copy the working directory
 COPY ./src ${DockerHome}/src
 
-CMD python src/main.py
+CMD python src/server/main.py

@@ -9,4 +9,4 @@ then
 fi
 
 echo "Starting server..."
-./env/bin/python src/main.py
+./env/bin/python src/server/main.py

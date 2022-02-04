@@ -14,7 +14,7 @@ app = FastAPI()
 async def convert(
     target: Currency,
     currency: Currency,
-    value: float = Query(..., ge=0),
+    value: float = Query(..., ge=0, example=10.99),
     decimal_place: Optional[int] = 4,
 ):
     out_value, error = helper.compute_exchange_value(
